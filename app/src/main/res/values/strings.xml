@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LawConferenceApp</string>
+    <string name="favourite">Favourite</string>
+    <string name="hey_joshua">Hey, Joshua!</string>
+    <string name="explore_text">What area of law do you want to explore?</string>
+    <string name="top_legal_events">Top Legal Events</string>
+</resources>
