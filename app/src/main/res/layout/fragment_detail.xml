@@ -99,8 +99,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:textSize="16sp"
             android:textColor="@color/detail_location"
-            android:textSize="13sp"
             app:layout_constraintStart_toEndOf="@+id/map_pin"
             app:layout_constraintTop_toBottomOf="@+id/eventTitleTV"
             tools:text="@string/placeholder_location" />
@@ -118,20 +118,21 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/rating"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            app:icon="@drawable/star_white"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="12sp"
-            app:cornerRadius="12dp"
-            app:backgroundTint="@color/rating_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="@color/rating_bg"
+            app:cornerRadius="15dp"
             tools:text="4.8"
-            android:gravity="center_vertical" />
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            app:icon="@drawable/star_white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"  />
 
         <TextView
             android:id="@+id/dateTV"
@@ -166,7 +167,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="@string/event_overview"
             android:textColor="@color/orange"
-            android:textSize="20sp"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/eventPlanTV"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/eventPlanTV" />
@@ -181,7 +182,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="@string/event_plan"
             android:textColor="@color/event_plan_colour"
-            android:textSize="18sp"
+            android:textSize="22sp"
             app:layout_constraintBottom_toTopOf="@+id/overviewTV"
             app:layout_constraintEnd_toEndOf="parent" />
 

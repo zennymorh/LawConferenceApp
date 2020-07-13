@@ -60,7 +60,7 @@ class DetailFragment : Fragment() {
     }
 
     private fun displayDate(event: Event) {
-        val formatter = SimpleDateFormat("YYYY-MM-dd'T'hh:mm:ss 'Z'", Locale.getDefault())
+        val formatter = SimpleDateFormat("YYYY-MM-dd", Locale.getDefault())
         val startDate = formatter.parse(event.startDate)
         val startDateFormatted = SimpleDateFormat("dd MMM", Locale.getDefault()).format(startDate)
 

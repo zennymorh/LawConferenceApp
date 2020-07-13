@@ -13,8 +13,8 @@
     "city": "Dalton",
     "state": "Tennessee",
     "country": "Burundi",
-    "startDate": "2020-10-28T11:59:27 -01:00",
-    "endDate": "2020-11-18T01:12:21 -01:00",
+    "startDate": "2020-10-28",
+    "endDate": "2020-11-18",
     "year": 2020,
     "attendees": [
       {
@@ -64,8 +64,8 @@
     "city": "Castleton",
     "state": "California",
     "country": "Macedonia",
-    "startDate": "2020-12-25T04:33:59 -01:00",
-    "endDate": "2020-12-03T12:50:39 -01:00",
+    "startDate": "2020-12-25",
+    "endDate": "2020-12-03",
     "year": 2020,
     "attendees": [
       {
@@ -110,8 +110,8 @@
     "city": "Johnsonburg",
     "state": "Georgia",
     "country": "Grenada",
-    "startDate": "2020-10-22T11:08:12 -01:00",
-    "endDate": "2020-11-09T03:14:59 -01:00",
+    "startDate": "2020-10-22",
+    "endDate": "2020-11-09",
     "year": 2020,
     "attendees": [
       {
@@ -171,8 +171,8 @@
     "city": "Vincent",
     "state": "Wyoming",
     "country": "Micronesia",
-    "startDate": "2020-12-16T07:18:25 -01:00",
-    "endDate": "2020-12-04T04:07:39 -01:00",
+    "startDate": "2020-12-16",
+    "endDate": "2020-12-04",
     "year": 2020,
     "attendees": [
       {
@@ -237,8 +237,8 @@
     "city": "Fulford",
     "state": "Oklahoma",
     "country": "Viet Nam",
-    "startDate": "2020-12-17T02:27:28 -01:00",
-    "endDate": "2020-09-22T07:22:20 -01:00",
+    "startDate": "2020-12-17",
+    "endDate": "2020-09-22",
     "year": 2020,
     "attendees": [
       {
@@ -288,8 +288,8 @@
     "city": "Jennings",
     "state": "Palau",
     "country": "New Zealand",
-    "startDate": "2020-12-21T06:44:30 -01:00",
-    "endDate": "2020-10-26T11:26:53 -01:00",
+    "startDate": "2020-12-21",
+    "endDate": "2020-10-26",
     "year": 2020,
     "attendees": [
       {
