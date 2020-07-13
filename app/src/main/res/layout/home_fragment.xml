@@ -10,7 +10,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".HomeFragment">
+            tools:context=".ui.home.HomeFragment">
 
             <ImageView
                 android:id="@+id/search"
@@ -88,7 +88,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -96,7 +96,7 @@
                 android:id="@+id/legalEventText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="22sp"
                 android:textColor="@color/blue"
                 android:text="@string/top_legal_events"
                 android:fontFamily="@font/poppins_medium"
@@ -105,8 +105,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="30dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                />
+                android:layout_marginLeft="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eventRecyclerView"
+                app:layout_constraintTop_toBottomOf="@+id/legalEventText"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </layout>

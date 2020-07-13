@@ -1,7 +1,8 @@
-package com.zennymorh.lawconferenceapp
+package com.zennymorh.lawconferenceapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.zennymorh.lawconferenceapp.R
 
 class MainActivity : AppCompatActivity() {
 

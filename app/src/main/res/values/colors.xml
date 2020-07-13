@@ -7,4 +7,11 @@
     <color name="orange">#FF724C</color>
     <color name="grey">#A9A9A9</color>
     <color name="blue">#3C4A6B</color>
+    <color name="category_color">#3C4A6B</color>
+    <color name="litigation">#E9FEFC</color>
+    <color name="banking">#F2F3FF</color>
+    <color name="corporate">#FFFCEE</color>
+    <color name="family">#FFF4F1</color>
+    <color name="rating_bg">#A6A9A9A9</color>
+    <color name="location_grey">#9CA2B1</color>
 </resources>
