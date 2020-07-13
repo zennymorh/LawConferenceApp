@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
@@ -21,7 +22,11 @@
         android:id="@+id/detailFragment"
         android:name="com.zennymorh.lawconferenceapp.detail.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail">
+
+        <argument android:name="selectedEvent"
+            app:argType="com.zennymorh.lawconferenceapp.models.Event"/>
+    </fragment>
     <fragment
         android:id="@+id/favouriteFragment"
         android:name="com.zennymorh.lawconferenceapp.FavouriteFragment"

@@ -1,9 +1,12 @@
 package com.zennymorh.lawconferenceapp.models
 
+import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 @Entity(tableName = "event_table")
 data class Event(
     @PrimaryKey(autoGenerate = false)
@@ -25,10 +28,11 @@ data class Event(
     var year: String,
     var attendees: List<Attendee>,
     var address: String
-)
+) : Parcelable
 
+@Parcelize
 data class Attendee(
     var id: String,
     var name: String,
     var picture: String
-)
+) : Parcelable

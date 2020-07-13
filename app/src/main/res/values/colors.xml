@@ -14,4 +14,7 @@
     <color name="family">#FFF4F1</color>
     <color name="rating_bg">#A6A9A9A9</color>
     <color name="location_grey">#9CA2B1</color>
+    <color name="detail_location">#B3B6CB</color>
+    <color name="date_colour">#9296B0</color>
+    <color name="event_plan_colour">#CECECE</color>
 </resources>

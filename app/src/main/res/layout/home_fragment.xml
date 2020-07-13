@@ -96,7 +96,7 @@
                 android:id="@+id/legalEventText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:textSize="26sp"
                 android:textColor="@color/blue"
                 android:text="@string/top_legal_events"
                 android:fontFamily="@font/poppins_medium"

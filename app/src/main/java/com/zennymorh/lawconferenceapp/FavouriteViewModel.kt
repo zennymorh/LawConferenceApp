@@ -15,7 +15,7 @@ class FavouriteViewModel() : ViewModel() {
     private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)
 
 
-    val events: LiveData<List<Event>> = db.getFavourite()
+    val events: LiveData<List<Event>> = db.getFavourites()
 
     init {
     }

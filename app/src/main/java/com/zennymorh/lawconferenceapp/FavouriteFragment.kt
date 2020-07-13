@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import com.zennymorh.lawconferenceapp.adapter.EventItemClickListener
+import com.zennymorh.lawconferenceapp.adapter.FavouriteAdapter
+import com.zennymorh.lawconferenceapp.adapter.FavouriteClickListener
 import com.zennymorh.lawconferenceapp.models.Event
 import kotlinx.android.synthetic.main.fragment_favourite.*
 
@@ -16,7 +19,11 @@ class FavouriteFragment : Fragment() {
     private lateinit var viewModel: FavouriteViewModel
 
     private val favouriteAdapter: FavouriteAdapter by lazy{
-        FavouriteAdapter(arrayListOf(),onEventItemSelected, favouriteClicked)
+        FavouriteAdapter(
+            arrayListOf(),
+            onEventItemSelected,
+            favouriteClicked
+        )
     }
 
     private val favouriteClicked by lazy {
@@ -30,7 +37,7 @@ class FavouriteFragment : Fragment() {
     private val onEventItemSelected by lazy {
         object : EventItemClickListener {
             override fun invoke(event: Event) {
-                val action = FavouriteFragmentDirections.actionFavouriteFragmentToDetailFragment()
+                val action = FavouriteFragmentDirections.actionFavouriteFragmentToDetailFragment(event)
                 findNavController().navigate(action)
             }
         }
@@ -48,7 +55,6 @@ class FavouriteFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(FavouriteViewModel::class.java)
 
-
         favouriteRecyclerView.adapter = favouriteAdapter
 
         viewModel.events.observe(viewLifecycleOwner, Observer { newList ->
@@ -56,6 +62,10 @@ class FavouriteFragment : Fragment() {
         })
 
         backButton.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
+        addFavouriteButton.setOnClickListener {
             findNavController().navigateUp()
         }
     }

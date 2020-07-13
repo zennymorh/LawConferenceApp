@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zennymorh.lawconferenceapp.R
 import com.zennymorh.lawconferenceapp.models.Category
 
-class CategoryAdapter(private var categoryList:ArrayList<Category>, var context: Context): RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>(){
+class CategoryAdapter(private var categoryList:ArrayList<Category>, var context: Context):
+    RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
         val inflater = LayoutInflater.from(parent.context)

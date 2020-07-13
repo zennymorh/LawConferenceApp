@@ -7,4 +7,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="placeholder_location">Eko Hotel, Lagos, Nigeria</string>
+    <string name="event_overview">Event Overview</string>
+    <string name="event_plan">Event Plan</string>
+    <string name="overview_placeholder_text">The NBA Annual General Conference presents a unique yearly opportunity for legal practitioners to interrogate.</string>
+    <string name="register_now">Register Now</string>
+    <string name="add_favourite">Add favourite</string>
 </resources>

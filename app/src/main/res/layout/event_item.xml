@@ -42,24 +42,25 @@
 
         <ImageView
             android:id="@+id/mapPin"
-            android:layout_width="18dp"
-            android:layout_height="22dp"
+            android:layout_width="15dp"
+            android:layout_height="19dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:src="@drawable/map_pin"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/eventNameTextView" />
 
         <TextView
             android:id="@+id/eventLocationTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp"
             android:textColor="@color/white"
             android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/mapPin"
             app:layout_constraintTop_toBottomOf="@id/eventNameTextView"
             tools:text="Lagos, Nigeria" />
@@ -67,27 +68,28 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/rating"
             android:layout_width="wrap_content"
-            android:layout_height="44dp"
+            android:layout_height="36dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginBottom="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             app:backgroundTint="@color/rating_bg"
-            app:cornerRadius="24dp"
+            app:cornerRadius="15dp"
             tools:text="4.8"
-            android:drawableLeft="@drawable/star_white"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            app:icon="@drawable/star_white"
             android:fontFamily="@font/poppins_medium"
-            android:textSize="16sp"
-            />
+            android:textSize="12sp" />
 
         <ImageView
             android:id="@+id/favourite"
-            android:layout_width="24dp"
-            android:layout_height="26dp"
-            android:layout_marginEnd="28dp"
-            android:layout_marginRight="28dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
             android:src="@drawable/ic_like"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

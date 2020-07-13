@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import com.zennymorh.lawconferenceapp.App
 import com.zennymorh.lawconferenceapp.R
 import com.zennymorh.lawconferenceapp.models.Event
@@ -13,8 +14,8 @@ import java.util.*
 typealias EventItemClickListener = (Event) -> Unit
 typealias FavouriteClickListener = (Event) -> Unit
 
-
-class EventAdapter(private var eventList:List<Event>, var eventItemClickListener: EventItemClickListener, var favouriteListener: FavouriteClickListener): RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
+class EventAdapter(private var eventList:List<Event>, var eventItemClickListener: EventItemClickListener,
+                   var favouriteListener: FavouriteClickListener): RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -62,14 +63,7 @@ class EventAdapter(private var eventList:List<Event>, var eventItemClickListener
                 favouriteListener.invoke(event)
             }
 
-//            itemView.eventImageView.layoutParams.height = getRandomIntInRange(450, 250)
-
-//            Picasso.get().load("https://waset.org/i/1140x400/static/images/cities/ottawa.jpg").into(itemView.eventImageView)
-        }
-
-        private fun getRandomIntInRange(max: Int, min: Int): Int {
-            val mRandom = Random()
-            return mRandom.nextInt(max - min + min) + min
+            Picasso.get().load(event.picture).into(itemView.eventImageView)
         }
     }
 }

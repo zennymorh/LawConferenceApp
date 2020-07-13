@@ -1,18 +1,15 @@
-package com.zennymorh.lawconferenceapp
+package com.zennymorh.lawconferenceapp.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.zennymorh.lawconferenceapp.R
 import com.zennymorh.lawconferenceapp.models.Event
-import kotlinx.android.synthetic.main.event_item.view.*
 import kotlinx.android.synthetic.main.favourite_item.view.*
-import java.util.*
 
-typealias EventItemClickListener = (Event) -> Unit
-typealias FavouriteClickListener = (Event) -> Unit
-
-class FavouriteAdapter(private var eventList:List<Event>, var eventItemClickListener: EventItemClickListener, var favouriteListener: FavouriteClickListener): RecyclerView.Adapter<FavouriteAdapter.FavouriteViewHolder>() {
+class FavouriteAdapter(private var eventList:List<Event>, var eventItemClickListener: EventItemClickListener,
+                       var favouriteListener: FavouriteClickListener): RecyclerView.Adapter<FavouriteAdapter.FavouriteViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavouriteViewHolder {
         val inflater = LayoutInflater.from(parent.context)

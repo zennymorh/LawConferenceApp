@@ -56,7 +56,7 @@ class HomeFragment : Fragment() {
     private val onEventItemSelected by lazy {
         object : EventItemClickListener {
             override fun invoke(event: Event) {
-                val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment()
+                val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(event)
                 findNavController().navigate(action)
             }
         }
@@ -99,6 +99,7 @@ class HomeFragment : Fragment() {
         favouriteButton.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_favouriteFragment)
         }
+
     }
 
 }

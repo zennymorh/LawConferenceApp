@@ -19,5 +19,5 @@ interface EventDao {
     fun getEventsNoLiveData(): List<Event>
 
     @Query("SELECT * from event_table WHERE isFavourite = 1")
-    fun getFavourite(): LiveData<List<Event>>
+    fun getFavourites(): LiveData<List<Event>>
 }
