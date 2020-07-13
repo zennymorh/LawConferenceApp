@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/favouriteFragment"
-        android:name="com.zennymorh.lawconferenceapp.FavouriteFragment"
+        android:name="com.zennymorh.lawconferenceapp.ui.favourite.FavouriteFragment"
         android:label="fragment_favourite"
         tools:layout="@layout/fragment_favourite" >
         <action

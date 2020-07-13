@@ -1,4 +1,4 @@
-package com.zennymorh.lawconferenceapp
+package com.zennymorh.lawconferenceapp.ui.favourite
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import com.zennymorh.lawconferenceapp.R
 import com.zennymorh.lawconferenceapp.adapter.EventItemClickListener
 import com.zennymorh.lawconferenceapp.adapter.FavouriteAdapter
 import com.zennymorh.lawconferenceapp.adapter.FavouriteClickListener
@@ -37,7 +38,10 @@ class FavouriteFragment : Fragment() {
     private val onEventItemSelected by lazy {
         object : EventItemClickListener {
             override fun invoke(event: Event) {
-                val action = FavouriteFragmentDirections.actionFavouriteFragmentToDetailFragment(event)
+                val action =
+                    FavouriteFragmentDirections.actionFavouriteFragmentToDetailFragment(
+                        event
+                    )
                 findNavController().navigate(action)
             }
         }

@@ -1,7 +1,6 @@
 package com.zennymorh.lawconferenceapp
 
 import android.app.Application
-import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.zennymorh.lawconferenceapp.db.EventDao

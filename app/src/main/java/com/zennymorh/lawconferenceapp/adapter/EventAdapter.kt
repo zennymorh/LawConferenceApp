@@ -5,11 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import com.zennymorh.lawconferenceapp.App
 import com.zennymorh.lawconferenceapp.R
 import com.zennymorh.lawconferenceapp.models.Event
 import kotlinx.android.synthetic.main.event_item.view.*
-import java.util.*
 
 typealias EventItemClickListener = (Event) -> Unit
 typealias FavouriteClickListener = (Event) -> Unit

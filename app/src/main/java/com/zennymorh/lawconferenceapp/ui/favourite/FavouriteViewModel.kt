@@ -1,7 +1,8 @@
-package com.zennymorh.lawconferenceapp
+package com.zennymorh.lawconferenceapp.ui.favourite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
+import com.zennymorh.lawconferenceapp.App
 import com.zennymorh.lawconferenceapp.models.Event
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
